@@ -1,0 +1,5 @@
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/build/CMakeFiles/runMain.dir
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/build/CMakeFiles/applibrary.dir
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/build/CMakeFiles/runTests.dir

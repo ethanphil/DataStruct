@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/main.cpp
+iostream
+-
+vector
+-
+string
+-
+whattotest.h
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/whattotest.h
+
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/whattotest.h
+vector
+-
+

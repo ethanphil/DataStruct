@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/tests.cpp
+whattotest.h
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/whattotest.h
+gtest/gtest.h
+-
+
+/mnt/c/Users/ethan/DataStruct/Lab00/firstProject/whattotest.h
+vector
+-
+
