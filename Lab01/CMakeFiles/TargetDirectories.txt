@@ -1,5 +1,5 @@
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/CMakeFiles/edit_cache.dir
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/CMakeFiles/runMain.dir
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/CMakeFiles/applibrary.dir
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/CMakeFiles/runTests.dir
+/home/jem/DataStruct/Lab01/CMakeFiles/rebuild_cache.dir
+/home/jem/DataStruct/Lab01/CMakeFiles/edit_cache.dir
+/home/jem/DataStruct/Lab01/CMakeFiles/runMain.dir
+/home/jem/DataStruct/Lab01/CMakeFiles/runTests.dir
+/home/jem/DataStruct/Lab01/CMakeFiles/applibrary.dir

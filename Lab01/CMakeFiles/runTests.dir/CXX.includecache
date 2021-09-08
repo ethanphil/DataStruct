@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/LinkedList.h
+/home/jem/DataStruct/Lab01/LinkedList.h
 string
 -
 
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/tests.cpp
+/home/jem/DataStruct/Lab01/tests.cpp
 LinkedList.h
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/LinkedList.h
+/home/jem/DataStruct/Lab01/LinkedList.h
 gtest/gtest.h
 -
 

@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/LinkedList.cpp
+/home/jem/DataStruct/Lab01/LinkedList.cpp
 LinkedList.h
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/LinkedList.h
+/home/jem/DataStruct/Lab01/LinkedList.h
 iostream
 -
 string
@@ -20,7 +20,7 @@ iomanip
 sstream
 -
 
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/LinkedList.h
+/home/jem/DataStruct/Lab01/LinkedList.h
 string
 -
 

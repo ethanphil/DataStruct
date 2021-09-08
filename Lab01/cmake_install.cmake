@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01
+# Install script for directory: /home/jem/DataStruct/Lab01
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab01/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jem/DataStruct/Lab01/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
