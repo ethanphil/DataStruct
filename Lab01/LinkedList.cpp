@@ -128,16 +128,6 @@ bool PointerBasedLinkedList::remove(int val)
 	}
 	else 
 	{
-		// if 
-		// if (cur == m_head)
-		// {
-		// 	m_head = cur->getNext();
-		// 	cur->setNext(nullptr);
-		// 	delete cur;
-		// }
-		// else
-		// {
-
 		//If value is found, previous node is updated to point to next node after current
 		//current node is set to null, then deleted
 		prev->setNext(cur->getNext());
