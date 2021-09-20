@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02/StackQueue.h
+string
+-
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02/main.cpp
+StackQueue.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02/StackQueue.h
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+
