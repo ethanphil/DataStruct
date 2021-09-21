@@ -83,6 +83,7 @@ public:
 			else{
 				towers[fromId - 1].pop();
 				towers[toId - 1].push(diskId);
+				return true;
 			}
 			
 		}
@@ -117,6 +118,7 @@ int main()
 
 	bool receivedEndToken = false;
 	bool invalidToken= false;
+	bool validMove = false;
 
 	while (!receivedEndToken || game.IsGameEnded())
 	{
@@ -179,8 +181,12 @@ int main()
 				cout << "Disk " << diskId << " From " << fromId << " To " << toId << endl;
 
 				if(!invalidToken){
-					game.QueueMove(inputLine);
-					game.MakeMove(diskId, fromId, toId);
+
+					validMove = game.MakeMove(diskId, fromId, toId);
+
+					if(validMove){
+						game.QueueMove(inputLine);
+					}
 				}
 				
 				receivedEndToken = game.WinCon();
