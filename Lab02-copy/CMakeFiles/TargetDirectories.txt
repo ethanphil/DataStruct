@@ -1,0 +1,5 @@
+/home/jem/DataStruct/Lab02-copy/CMakeFiles/rebuild_cache.dir
+/home/jem/DataStruct/Lab02-copy/CMakeFiles/edit_cache.dir
+/home/jem/DataStruct/Lab02-copy/CMakeFiles/runMain.dir
+/home/jem/DataStruct/Lab02-copy/CMakeFiles/runTests.dir
+/home/jem/DataStruct/Lab02-copy/CMakeFiles/applibrary.dir

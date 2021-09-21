@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jem/DataStruct/Lab02-copy/StackQueue.h
+string
+-
+
+/home/jem/DataStruct/Lab02-copy/main.cpp
+StackQueue.h
+/home/jem/DataStruct/Lab02-copy/StackQueue.h
+iostream
+-
+fstream
+-
+string
+-
+sstream
+-
+vector
+-
+
