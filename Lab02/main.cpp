@@ -99,7 +99,7 @@ public:
 	}
 private:
 	int moveCount = 0;
-	bool m_GameEnded;
+	bool m_GameEnded = 0;
 	ArrayBasedStack towers[3];
 	ArrayBasedQueue queue;
 };
