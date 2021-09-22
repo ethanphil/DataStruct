@@ -34,7 +34,7 @@ public:
 		queue.enQueue(val);
 	}
 
-	bool MakeMove(int diskId, int fromId, int toId)
+	bool CheckMove(int diskId, int fromId, int toId)
 	{
 		try
 		{
@@ -44,13 +44,41 @@ public:
 				return false;
 			}
 		}
-		catch(const std::exception& e)
+		catch(const char* s)
 		{
-			std::cerr << e.what() << '\n';
+			return false;
 		}
-		
+		try 
+		{
+			if (towers[toId - 1].peek() < diskId)
+			{
+				cout << "Cannot move larger disk onto smaller disk" << endl;
+				return false;
+			}
+		}
+		catch (const char* s)
+		{
+			return true;
+		}
+		return true;
+	}
+	bool MakePlayerMove(int diskId, int fromId, int toId)
+	{
+		QueueMove(to_string(diskId) + "," + to_string(fromId) + "," + to_string(toId));
+		towers[fromId-1].pop();
+		towers[toId-1].push(diskId);
+		moveCount++;
+		if (towers[2].toString() == "4 3 2 1")
+		{
+			m_GameEnded = true;
+		}
+	}
+	int GetMoveCount()
+	{
+		return moveCount;
 	}
 private:
+	int moveCount = 0;
 	bool m_GameEnded;
 	ArrayBasedStack towers[3];
 	ArrayBasedQueue queue;
@@ -68,7 +96,7 @@ int main()
 
 	bool receivedEndToken = false;
 
-	while (!receivedEndToken || game.IsGameEnded())
+	while (!receivedEndToken && !game.IsGameEnded())
 	{
 		std::string inputLine;
 		game.PrintTowers();
@@ -122,7 +150,15 @@ int main()
 
 				cout << "Disk " << diskId << " From " << fromId << " To " << toId << endl;
 				
-				game.QueueMove(inputLine);
+				if (game.CheckMove(diskId, fromId, toId))
+				{
+					game.MakePlayerMove(diskId, fromId, toId);
+					game.PrintTowers();
+				}
+				else
+				{
+					cout << "Invalid move, try again" << endl;
+				}
 
 				
 
@@ -132,7 +168,14 @@ int main()
 
 
 	}
-
+	if (game.IsGameEnded())
+	{
+		cout << "You won, congrats" << endl;
+	}
+	else
+	{
+		cout << "Game ended" << endl;
+	}
     return 0;
 }
 

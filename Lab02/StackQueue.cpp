@@ -10,7 +10,7 @@ int ArrayBasedStack::peek()
 {
 	if (this->isEmpty())
 	{
-		throw "ADT is emtpy";
+		throw "ADT is empty";
 	}
 	else
 	{
@@ -63,6 +63,9 @@ bool ArrayBasedStack::pop()
 std::string ArrayBasedStack::toString()
 {
 	std::string outstr = "";
+	if(count ==0)
+		return outstr;
+
 	for(int i = 0; i < count; i++)
 	{
 		outstr += std::to_string(values[i]) + " ";
