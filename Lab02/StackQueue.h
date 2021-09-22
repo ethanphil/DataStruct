@@ -60,6 +60,8 @@ public:
 	bool deQueue() override;
 	//If the ADT is empty throw an exception indicating this
 	std::string peekFront() override;
+	int getFront();
+	int getBack();
 private:
 	std::string values[100];
 	int count = 0;

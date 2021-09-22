@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jem/DataStruct/Lab02-copy/StackQueue.cpp" "/home/jem/DataStruct/Lab02-copy/build/CMakeFiles/applibrary.dir/StackQueue.cpp.o"
+  "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/StackQueue.cpp" "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/build/CMakeFiles/applibrary.dir/StackQueue.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

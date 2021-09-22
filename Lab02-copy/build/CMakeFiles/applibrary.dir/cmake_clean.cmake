@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/applibrary.dir/StackQueue.cpp.o"
-  "libapplibrary.a"
   "libapplibrary.pdb"
+  "libapplibrary.a"
 )
 
 # Per-language clean rules from dependency scanning.

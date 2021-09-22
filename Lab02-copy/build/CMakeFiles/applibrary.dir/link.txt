@@ -1,2 +1,2 @@
-/bin/ar qc libapplibrary.a  CMakeFiles/applibrary.dir/StackQueue.cpp.o
-/bin/ranlib libapplibrary.a
+/usr/bin/ar qc libapplibrary.a  CMakeFiles/applibrary.dir/StackQueue.cpp.o
+/usr/bin/ranlib libapplibrary.a

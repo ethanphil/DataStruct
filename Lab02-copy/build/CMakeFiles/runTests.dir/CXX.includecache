@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jem/DataStruct/Lab02-copy/StackQueue.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/StackQueue.h
 string
 -
 
-/home/jem/DataStruct/Lab02-copy/tests.cpp
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/tests.cpp
 StackQueue.h
-/home/jem/DataStruct/Lab02-copy/StackQueue.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/StackQueue.h
 gtest/gtest.h
 -
 

@@ -14,7 +14,7 @@ int ArrayBasedStack::peek()
 {
 	if (this->isEmpty())
 	{
-		return 0;
+		throw "ADT is empty";
 	}
 	else
 	{

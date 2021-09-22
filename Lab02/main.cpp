@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sstream>
 #include <vector>
 
 using namespace std;
@@ -18,6 +19,25 @@ public:
 		towers[0].push(3);
 		towers[0].push(2);
 		towers[0].push(1);
+	}
+
+	void WriteMoves(){
+		ofstream movesOut;
+		std::string line;
+		movesOut.open("moves.txt", ios::out);
+		if(movesOut.is_open()){
+			//checks where the front and back of queue are to write valid moves. peeks front then dequeues entry to txt file
+			for(int i = queue.getFront(); i <= queue.getBack(); i++){
+				line = queue.peekFront() ;
+				movesOut << line << endl;
+				queue.deQueue();
+			}
+			movesOut.close();
+		}
+		else{
+			cout << "could not open moves.txt" << endl;
+		}
+
 	}
 
 	bool IsGameEnded() { return m_GameEnded; }
@@ -153,7 +173,6 @@ int main()
 				if (game.CheckMove(diskId, fromId, toId))
 				{
 					game.MakePlayerMove(diskId, fromId, toId);
-					game.PrintTowers();
 				}
 				else
 				{
@@ -175,7 +194,10 @@ int main()
 	else
 	{
 		cout << "Game ended" << endl;
+		game.QueueMove("-1");
 	}
+	cout << "Saving Moves" << endl;
+	game.WriteMoves();
     return 0;
 }
 

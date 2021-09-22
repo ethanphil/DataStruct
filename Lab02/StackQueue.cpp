@@ -136,3 +136,13 @@ bool ArrayBasedQueue::isEmpty() const
 		return true;
 	}
 }
+
+int ArrayBasedQueue::getFront()
+{
+	return front;
+}
+
+int ArrayBasedQueue::getBack()
+{
+	return back;
+}

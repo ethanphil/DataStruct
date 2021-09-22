@@ -10,15 +10,15 @@
 
 using namespace std;
 
-class TowersOfHannoiGame : ArrayBasedStack, ArrayBasedQueue
+class TowersOfHannoiGame
 {
 public:
 	TowersOfHannoiGame()
 	{
 
-	for(int i = 0; i < diskNum; i++){
-		towers[0].push(4-i);
-	}
+		for(int i = 0; i < diskNum; i++){
+			towers[0].push(4-i);
+		}
 
 	}
 
@@ -32,6 +32,27 @@ public:
 		cout << "Tower 3: " + towers[2].toString() << endl;
 	}
 
+	bool CheckMove(int diskId, int fromId, int toId)
+	{
+		try
+		{
+			if ((towers[fromId - 1].peek() != diskId))
+			{
+				cout << "Disk " << diskId << " is not on top of tower " << fromId << endl;
+				return false;
+			}
+		}catch(...){return false;}
+		try 
+		{
+			if (towers[toId - 1].peek() < diskId)
+			{
+				cout << "Cannot move larger disk onto smaller disk" << endl;
+				return false;
+			}
+		}catch(...){return true;}
+		return true;
+	}
+
 	void QueueMove(std::string val)
 	{
 		queue.enQueue(val);
@@ -40,7 +61,7 @@ public:
 	void WriteMoves(){
 		ofstream movesOut;
 		std::string line;
-		movesOut.open ("moves_out.txt", ios::out);
+		movesOut.open ("moves.txt", ios::out);
 		if(movesOut.is_open()){
 			for(int i = queue.getFront(); i <= queue.getBack(); i++){
 				line = queue.peekFront() ;
@@ -50,7 +71,7 @@ public:
 				movesOut.close();
 		}
 		else{
-			cout << "could not open moves_out.txt" << endl;
+			cout << "could not open moves.txt" << endl;
 		}
 
 	}
@@ -68,32 +89,13 @@ public:
 
 	bool MakeMove(int diskId, int fromId, int toId)
 	{
-		try
+		QueueMove(to_string(diskId) + "," + to_string(fromId) + "," + to_string(toId));
+		towers[fromId-1].pop();
+		towers[toId-1].push(diskId);
+		if (towers[2].toString() == "4 3 2 1")
 		{
-			if (towers[fromId - 1].peek() != diskId)
-			{
-				cout << "Disk " << diskId << " is not on top of tower " << fromId << endl;
-				return false;
-			}
-			else if (towers[fromId - 1].peek() >= towers[toId - 1].peek() && towers[toId - 1].peek() != 0)
-			{
-				cout << "Disk " << diskId << "is larger and cannot be moved on top of " << towers[toId - 1].peek() << endl;
-				return false;
-			}
-			else{
-				towers[fromId - 1].pop();
-				towers[toId - 1].push(diskId);
-				return true;
-			}
-			
+			m_GameEnded = true;
 		}
-		
-		catch(const std::exception& e)
-		{
-			std::cerr << e.what() << '\n';
-		}
-		
-
 	}
 private:
 	bool m_GameEnded;
@@ -120,14 +122,14 @@ int main()
 	bool invalidToken= false;
 	bool validMove = false;
 
-	while (!receivedEndToken || game.IsGameEnded())
+	while (!receivedEndToken && game.IsGameEnded())
 	{
 		invalidToken = false;
 		game.PrintTowers();
 
 
 		cout << "Enter Move " << endl;
-		getline(moves, inputLine);
+		getline(cin, inputLine);
 		if (inputLine == "-1")
 		{
 			receivedEndToken = true;
@@ -180,12 +182,11 @@ int main()
 
 				cout << "Disk " << diskId << " From " << fromId << " To " << toId << endl;
 
+				
 				if(!invalidToken){
-
-					validMove = game.MakeMove(diskId, fromId, toId);
-
-					if(validMove){
-						game.QueueMove(inputLine);
+					if (game.CheckMove(diskId, fromId, toId))
+					{
+						game.MakeMove(diskId, fromId, toId);
 					}
 				}
 				

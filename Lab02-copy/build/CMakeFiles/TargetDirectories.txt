@@ -1,5 +1,5 @@
-/home/jem/DataStruct/Lab02-copy/build/CMakeFiles/rebuild_cache.dir
-/home/jem/DataStruct/Lab02-copy/build/CMakeFiles/edit_cache.dir
-/home/jem/DataStruct/Lab02-copy/build/CMakeFiles/runMain.dir
-/home/jem/DataStruct/Lab02-copy/build/CMakeFiles/runTests.dir
-/home/jem/DataStruct/Lab02-copy/build/CMakeFiles/applibrary.dir
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/build/CMakeFiles/runMain.dir
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/build/CMakeFiles/applibrary.dir
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab02-copy/build/CMakeFiles/runTests.dir
