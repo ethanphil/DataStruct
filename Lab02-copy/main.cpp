@@ -10,15 +10,15 @@
 
 using namespace std;
 
-class TowersOfHannoiGame
+class TowersOfHannoiGame : ArrayBasedStack, ArrayBasedQueue
 {
 public:
 	TowersOfHannoiGame()
 	{
-
-		for(int i = 0; i < diskNum; i++){
-			towers[0].push(4-i);
-		}
+	//initializes the first tower with four disks 
+	for(int i = 0; i < diskNum; i++){
+		towers[0].push(4-i);
+	}
 
 	}
 
@@ -32,37 +32,18 @@ public:
 		cout << "Tower 3: " + towers[2].toString() << endl;
 	}
 
-	bool CheckMove(int diskId, int fromId, int toId)
-	{
-		try
-		{
-			if ((towers[fromId - 1].peek() != diskId))
-			{
-				cout << "Disk " << diskId << " is not on top of tower " << fromId << endl;
-				return false;
-			}
-		}catch(...){return false;}
-		try 
-		{
-			if (towers[toId - 1].peek() < diskId)
-			{
-				cout << "Cannot move larger disk onto smaller disk" << endl;
-				return false;
-			}
-		}catch(...){return true;}
-		return true;
-	}
-
 	void QueueMove(std::string val)
 	{
 		queue.enQueue(val);
 	}
 
+	//Writes moves out to txt file using fstream
 	void WriteMoves(){
 		ofstream movesOut;
 		std::string line;
-		movesOut.open ("moves.txt", ios::out);
+		movesOut.open ("moves_out.txt", ios::out);
 		if(movesOut.is_open()){
+			//checks where the front and back of queue are to write valid moves. peeks front then dequeues entry to txt file
 			for(int i = queue.getFront(); i <= queue.getBack(); i++){
 				line = queue.peekFront() ;
 				movesOut << line << endl;
@@ -71,13 +52,14 @@ public:
 				movesOut.close();
 		}
 		else{
-			cout << "could not open moves.txt" << endl;
+			cout << "could not open moves_out.txt" << endl;
 		}
 
 	}
 
+	//function checks tower 3 to ensure it holds all the disks, checkingto make sure the smallest disk is on top of the stack
 	bool WinCon(){
-		if(towers[2].peek() == 1 && towers[2].getStackCount() == 4){
+		if(towers[2].peek() == 1 && towers[2].getStackCount() == diskNum){
 			cout << "You have won" << endl
 				<< "ending game and saving moves" << endl;
 			return true;
@@ -87,15 +69,37 @@ public:
 		}
 	}
 
+	//if input was valid, the function checks to make sure the move itself is valid, if so it removes disk at fromID adding to toID
+	//it then passes back if move is valid or not
 	bool MakeMove(int diskId, int fromId, int toId)
 	{
-		QueueMove(to_string(diskId) + "," + to_string(fromId) + "," + to_string(toId));
-		towers[fromId-1].pop();
-		towers[toId-1].push(diskId);
-		if (towers[2].toString() == "4 3 2 1")
+		try
 		{
-			m_GameEnded = true;
+			if (towers[fromId - 1].peek() != diskId)
+			{
+				cout << "Disk " << diskId << " is not on top of tower " << fromId << endl;
+				return false;
+			}
+			else if (towers[fromId - 1].peek() >= towers[toId - 1].peek() && towers[toId - 1].peek() != 0)
+			{
+				cout << "Disk " << diskId << "is larger and cannot be moved on top of " << towers[toId - 1].peek() << endl;
+				return false;
+			}
+			else{
+				towers[fromId - 1].pop();
+				towers[toId - 1].push(diskId);
+				return true;
+			}
+			
 		}
+		
+		catch(const std::exception& e)
+		{
+			std::cerr << e.what() << '\n';
+			return false;
+		}
+		
+
 	}
 private:
 	bool m_GameEnded;
@@ -115,24 +119,21 @@ int main()
 	TowersOfHannoiGame game;
 
 	std::string inputLine;
-	ifstream moves;
-	moves.open("moves.txt",ios::in);
-
 	bool receivedEndToken = false;
 	bool invalidToken= false;
 	bool validMove = false;
 
-	while (!receivedEndToken && game.IsGameEnded())
+	while (!receivedEndToken || game.IsGameEnded())
 	{
 		invalidToken = false;
 		game.PrintTowers();
-
 
 		cout << "Enter Move " << endl;
 		getline(cin, inputLine);
 		if (inputLine == "-1")
 		{
 			receivedEndToken = true;
+			cout << "quit command received" << endl << "exiting" << endl;
 		}
 
 		else
@@ -182,11 +183,12 @@ int main()
 
 				cout << "Disk " << diskId << " From " << fromId << " To " << toId << endl;
 
-				
 				if(!invalidToken){
-					if (game.CheckMove(diskId, fromId, toId))
-					{
-						game.MakeMove(diskId, fromId, toId);
+
+					validMove = game.MakeMove(diskId, fromId, toId);
+
+					if(validMove){
+						game.QueueMove(inputLine);
 					}
 				}
 				
