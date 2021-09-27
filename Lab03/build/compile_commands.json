@@ -6,8 +6,23 @@
 },
 {
   "directory": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/applibrary.dir/SomeThing.cpp.o -c \"/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/SomeThing.cpp\"",
-  "file": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/SomeThing.cpp"
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/applibrary.dir/Card.cpp.o -c \"/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.cpp\"",
+  "file": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.cpp"
+},
+{
+  "directory": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/applibrary.dir/Game.cpp.o -c \"/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.cpp\"",
+  "file": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.cpp"
+},
+{
+  "directory": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/applibrary.dir/CardPile.cpp.o -c \"/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.cpp\"",
+  "file": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.cpp"
+},
+{
+  "directory": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/applibrary.dir/Player.cpp.o -c \"/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.cpp\"",
+  "file": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.cpp"
 },
 {
   "directory": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build",

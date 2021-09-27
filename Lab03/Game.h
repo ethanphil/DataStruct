@@ -9,7 +9,7 @@ class Game
     void CreateDeck();
     void MovePlayerHandToDeck(Player *p);
     private:
-    std::vector<Player*> *m_players;
+    std::vector<Player*> m_players;
     CardPile *m_deck;
     CardPile *m_drawPile;
 };

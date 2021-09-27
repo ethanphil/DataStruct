@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/SomeThing.cpp" "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles/applibrary.dir/SomeThing.cpp.o"
+  "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.cpp" "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles/applibrary.dir/Card.cpp.o"
+  "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.cpp" "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles/applibrary.dir/CardPile.cpp.o"
+  "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.cpp" "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles/applibrary.dir/Game.cpp.o"
+  "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.cpp" "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles/applibrary.dir/Player.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

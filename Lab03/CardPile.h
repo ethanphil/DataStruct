@@ -13,5 +13,5 @@ class CardPile{
     Card *GetCardAt(int i);
     int GetSize();
     private:
-    std::vector<Card*> *m_cards;
+    std::vector<Card*> m_cards;
 };

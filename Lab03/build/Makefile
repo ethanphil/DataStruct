@@ -149,32 +149,113 @@ runTests/fast:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
-SomeThing.o: SomeThing.cpp.o
+Card.o: Card.cpp.o
 
-.PHONY : SomeThing.o
+.PHONY : Card.o
 
 # target to build an object file
-SomeThing.cpp.o:
-	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/SomeThing.cpp.o
-.PHONY : SomeThing.cpp.o
+Card.cpp.o:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Card.cpp.o
+.PHONY : Card.cpp.o
 
-SomeThing.i: SomeThing.cpp.i
+Card.i: Card.cpp.i
 
-.PHONY : SomeThing.i
+.PHONY : Card.i
 
 # target to preprocess a source file
-SomeThing.cpp.i:
-	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/SomeThing.cpp.i
-.PHONY : SomeThing.cpp.i
+Card.cpp.i:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Card.cpp.i
+.PHONY : Card.cpp.i
 
-SomeThing.s: SomeThing.cpp.s
+Card.s: Card.cpp.s
 
-.PHONY : SomeThing.s
+.PHONY : Card.s
 
 # target to generate assembly for a file
-SomeThing.cpp.s:
-	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/SomeThing.cpp.s
-.PHONY : SomeThing.cpp.s
+Card.cpp.s:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Card.cpp.s
+.PHONY : Card.cpp.s
+
+CardPile.o: CardPile.cpp.o
+
+.PHONY : CardPile.o
+
+# target to build an object file
+CardPile.cpp.o:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/CardPile.cpp.o
+.PHONY : CardPile.cpp.o
+
+CardPile.i: CardPile.cpp.i
+
+.PHONY : CardPile.i
+
+# target to preprocess a source file
+CardPile.cpp.i:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/CardPile.cpp.i
+.PHONY : CardPile.cpp.i
+
+CardPile.s: CardPile.cpp.s
+
+.PHONY : CardPile.s
+
+# target to generate assembly for a file
+CardPile.cpp.s:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/CardPile.cpp.s
+.PHONY : CardPile.cpp.s
+
+Game.o: Game.cpp.o
+
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+Player.o: Player.cpp.o
+
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Player.cpp.s
+.PHONY : Player.cpp.s
 
 main.o: main.cpp.o
 
@@ -241,9 +322,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... applibrary"
 	@echo "... runTests"
-	@echo "... SomeThing.o"
-	@echo "... SomeThing.i"
-	@echo "... SomeThing.s"
+	@echo "... Card.o"
+	@echo "... Card.i"
+	@echo "... Card.s"
+	@echo "... CardPile.o"
+	@echo "... CardPile.i"
+	@echo "... CardPile.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

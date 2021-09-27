@@ -57,41 +57,119 @@ include CMakeFiles/applibrary.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/applibrary.dir/flags.make
 
-CMakeFiles/applibrary.dir/SomeThing.cpp.o: CMakeFiles/applibrary.dir/flags.make
-CMakeFiles/applibrary.dir/SomeThing.cpp.o: ../SomeThing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/applibrary.dir/SomeThing.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/applibrary.dir/SomeThing.cpp.o -c "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/SomeThing.cpp"
+CMakeFiles/applibrary.dir/Card.cpp.o: CMakeFiles/applibrary.dir/flags.make
+CMakeFiles/applibrary.dir/Card.cpp.o: ../Card.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/applibrary.dir/Card.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/applibrary.dir/Card.cpp.o -c "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.cpp"
 
-CMakeFiles/applibrary.dir/SomeThing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/applibrary.dir/SomeThing.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/SomeThing.cpp" > CMakeFiles/applibrary.dir/SomeThing.cpp.i
+CMakeFiles/applibrary.dir/Card.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/applibrary.dir/Card.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.cpp" > CMakeFiles/applibrary.dir/Card.cpp.i
 
-CMakeFiles/applibrary.dir/SomeThing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/applibrary.dir/SomeThing.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/SomeThing.cpp" -o CMakeFiles/applibrary.dir/SomeThing.cpp.s
+CMakeFiles/applibrary.dir/Card.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/applibrary.dir/Card.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.cpp" -o CMakeFiles/applibrary.dir/Card.cpp.s
 
-CMakeFiles/applibrary.dir/SomeThing.cpp.o.requires:
+CMakeFiles/applibrary.dir/Card.cpp.o.requires:
 
-.PHONY : CMakeFiles/applibrary.dir/SomeThing.cpp.o.requires
+.PHONY : CMakeFiles/applibrary.dir/Card.cpp.o.requires
 
-CMakeFiles/applibrary.dir/SomeThing.cpp.o.provides: CMakeFiles/applibrary.dir/SomeThing.cpp.o.requires
-	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/SomeThing.cpp.o.provides.build
-.PHONY : CMakeFiles/applibrary.dir/SomeThing.cpp.o.provides
+CMakeFiles/applibrary.dir/Card.cpp.o.provides: CMakeFiles/applibrary.dir/Card.cpp.o.requires
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Card.cpp.o.provides.build
+.PHONY : CMakeFiles/applibrary.dir/Card.cpp.o.provides
 
-CMakeFiles/applibrary.dir/SomeThing.cpp.o.provides.build: CMakeFiles/applibrary.dir/SomeThing.cpp.o
+CMakeFiles/applibrary.dir/Card.cpp.o.provides.build: CMakeFiles/applibrary.dir/Card.cpp.o
+
+
+CMakeFiles/applibrary.dir/Game.cpp.o: CMakeFiles/applibrary.dir/flags.make
+CMakeFiles/applibrary.dir/Game.cpp.o: ../Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/applibrary.dir/Game.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/applibrary.dir/Game.cpp.o -c "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.cpp"
+
+CMakeFiles/applibrary.dir/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/applibrary.dir/Game.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.cpp" > CMakeFiles/applibrary.dir/Game.cpp.i
+
+CMakeFiles/applibrary.dir/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/applibrary.dir/Game.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.cpp" -o CMakeFiles/applibrary.dir/Game.cpp.s
+
+CMakeFiles/applibrary.dir/Game.cpp.o.requires:
+
+.PHONY : CMakeFiles/applibrary.dir/Game.cpp.o.requires
+
+CMakeFiles/applibrary.dir/Game.cpp.o.provides: CMakeFiles/applibrary.dir/Game.cpp.o.requires
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Game.cpp.o.provides.build
+.PHONY : CMakeFiles/applibrary.dir/Game.cpp.o.provides
+
+CMakeFiles/applibrary.dir/Game.cpp.o.provides.build: CMakeFiles/applibrary.dir/Game.cpp.o
+
+
+CMakeFiles/applibrary.dir/CardPile.cpp.o: CMakeFiles/applibrary.dir/flags.make
+CMakeFiles/applibrary.dir/CardPile.cpp.o: ../CardPile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/applibrary.dir/CardPile.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/applibrary.dir/CardPile.cpp.o -c "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.cpp"
+
+CMakeFiles/applibrary.dir/CardPile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/applibrary.dir/CardPile.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.cpp" > CMakeFiles/applibrary.dir/CardPile.cpp.i
+
+CMakeFiles/applibrary.dir/CardPile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/applibrary.dir/CardPile.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.cpp" -o CMakeFiles/applibrary.dir/CardPile.cpp.s
+
+CMakeFiles/applibrary.dir/CardPile.cpp.o.requires:
+
+.PHONY : CMakeFiles/applibrary.dir/CardPile.cpp.o.requires
+
+CMakeFiles/applibrary.dir/CardPile.cpp.o.provides: CMakeFiles/applibrary.dir/CardPile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/CardPile.cpp.o.provides.build
+.PHONY : CMakeFiles/applibrary.dir/CardPile.cpp.o.provides
+
+CMakeFiles/applibrary.dir/CardPile.cpp.o.provides.build: CMakeFiles/applibrary.dir/CardPile.cpp.o
+
+
+CMakeFiles/applibrary.dir/Player.cpp.o: CMakeFiles/applibrary.dir/flags.make
+CMakeFiles/applibrary.dir/Player.cpp.o: ../Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/applibrary.dir/Player.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/applibrary.dir/Player.cpp.o -c "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.cpp"
+
+CMakeFiles/applibrary.dir/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/applibrary.dir/Player.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.cpp" > CMakeFiles/applibrary.dir/Player.cpp.i
+
+CMakeFiles/applibrary.dir/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/applibrary.dir/Player.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.cpp" -o CMakeFiles/applibrary.dir/Player.cpp.s
+
+CMakeFiles/applibrary.dir/Player.cpp.o.requires:
+
+.PHONY : CMakeFiles/applibrary.dir/Player.cpp.o.requires
+
+CMakeFiles/applibrary.dir/Player.cpp.o.provides: CMakeFiles/applibrary.dir/Player.cpp.o.requires
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Player.cpp.o.provides.build
+.PHONY : CMakeFiles/applibrary.dir/Player.cpp.o.provides
+
+CMakeFiles/applibrary.dir/Player.cpp.o.provides.build: CMakeFiles/applibrary.dir/Player.cpp.o
 
 
 # Object files for target applibrary
 applibrary_OBJECTS = \
-"CMakeFiles/applibrary.dir/SomeThing.cpp.o"
+"CMakeFiles/applibrary.dir/Card.cpp.o" \
+"CMakeFiles/applibrary.dir/Game.cpp.o" \
+"CMakeFiles/applibrary.dir/CardPile.cpp.o" \
+"CMakeFiles/applibrary.dir/Player.cpp.o"
 
 # External object files for target applibrary
 applibrary_EXTERNAL_OBJECTS =
 
-libapplibrary.a: CMakeFiles/applibrary.dir/SomeThing.cpp.o
+libapplibrary.a: CMakeFiles/applibrary.dir/Card.cpp.o
+libapplibrary.a: CMakeFiles/applibrary.dir/Game.cpp.o
+libapplibrary.a: CMakeFiles/applibrary.dir/CardPile.cpp.o
+libapplibrary.a: CMakeFiles/applibrary.dir/Player.cpp.o
 libapplibrary.a: CMakeFiles/applibrary.dir/build.make
 libapplibrary.a: CMakeFiles/applibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libapplibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libapplibrary.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/applibrary.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/applibrary.dir/link.txt --verbose=$(VERBOSE)
 
@@ -100,7 +178,10 @@ CMakeFiles/applibrary.dir/build: libapplibrary.a
 
 .PHONY : CMakeFiles/applibrary.dir/build
 
-CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/SomeThing.cpp.o.requires
+CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/Card.cpp.o.requires
+CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/Game.cpp.o.requires
+CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/CardPile.cpp.o.requires
+CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/Player.cpp.o.requires
 
 .PHONY : CMakeFiles/applibrary.dir/requires
 

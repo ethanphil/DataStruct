@@ -1,2 +1,2 @@
-/usr/bin/ar qc libapplibrary.a  CMakeFiles/applibrary.dir/SomeThing.cpp.o
+/usr/bin/ar qc libapplibrary.a  CMakeFiles/applibrary.dir/Card.cpp.o CMakeFiles/applibrary.dir/Game.cpp.o CMakeFiles/applibrary.dir/CardPile.cpp.o CMakeFiles/applibrary.dir/Player.cpp.o
 /usr/bin/ranlib libapplibrary.a
