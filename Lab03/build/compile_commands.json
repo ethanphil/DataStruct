@@ -26,6 +26,11 @@
 },
 {
   "directory": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/applibrary.dir/Suits.cpp.o -c \"/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.cpp\"",
+  "file": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.cpp"
+},
+{
+  "directory": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build",
   "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/runTests.dir/tests.cpp.o -c \"/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/tests.cpp\"",
   "file": "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/tests.cpp"
 }

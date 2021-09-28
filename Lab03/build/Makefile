@@ -257,6 +257,33 @@ Player.cpp.s:
 	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
+Suits.o: Suits.cpp.o
+
+.PHONY : Suits.o
+
+# target to build an object file
+Suits.cpp.o:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Suits.cpp.o
+.PHONY : Suits.cpp.o
+
+Suits.i: Suits.cpp.i
+
+.PHONY : Suits.i
+
+# target to preprocess a source file
+Suits.cpp.i:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Suits.cpp.i
+.PHONY : Suits.cpp.i
+
+Suits.s: Suits.cpp.s
+
+.PHONY : Suits.s
+
+# target to generate assembly for a file
+Suits.cpp.s:
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Suits.cpp.s
+.PHONY : Suits.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -334,6 +361,9 @@ help:
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
+	@echo "... Suits.o"
+	@echo "... Suits.i"
+	@echo "... Suits.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

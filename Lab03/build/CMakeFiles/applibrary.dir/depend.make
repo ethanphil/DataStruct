@@ -3,24 +3,27 @@
 
 CMakeFiles/applibrary.dir/Card.cpp.o: ../Card.cpp
 CMakeFiles/applibrary.dir/Card.cpp.o: ../Card.h
-CMakeFiles/applibrary.dir/Card.cpp.o: ../Suit.h
+CMakeFiles/applibrary.dir/Card.cpp.o: ../Suits.h
 
 CMakeFiles/applibrary.dir/CardPile.cpp.o: ../Card.h
 CMakeFiles/applibrary.dir/CardPile.cpp.o: ../CardPile.cpp
 CMakeFiles/applibrary.dir/CardPile.cpp.o: ../CardPile.h
-CMakeFiles/applibrary.dir/CardPile.cpp.o: ../Suit.h
+CMakeFiles/applibrary.dir/CardPile.cpp.o: ../Suits.h
 
 CMakeFiles/applibrary.dir/Game.cpp.o: ../Card.h
 CMakeFiles/applibrary.dir/Game.cpp.o: ../CardPile.h
 CMakeFiles/applibrary.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/applibrary.dir/Game.cpp.o: ../Game.h
 CMakeFiles/applibrary.dir/Game.cpp.o: ../Player.h
-CMakeFiles/applibrary.dir/Game.cpp.o: ../Suit.h
+CMakeFiles/applibrary.dir/Game.cpp.o: ../Suits.h
 
 CMakeFiles/applibrary.dir/Player.cpp.o: ../Card.h
 CMakeFiles/applibrary.dir/Player.cpp.o: ../CardPile.h
 CMakeFiles/applibrary.dir/Player.cpp.o: ../Game.h
 CMakeFiles/applibrary.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/applibrary.dir/Player.cpp.o: ../Player.h
-CMakeFiles/applibrary.dir/Player.cpp.o: ../Suit.h
+CMakeFiles/applibrary.dir/Player.cpp.o: ../Suits.h
+
+CMakeFiles/applibrary.dir/Suits.cpp.o: ../Suits.cpp
+CMakeFiles/applibrary.dir/Suits.cpp.o: ../Suits.h
 

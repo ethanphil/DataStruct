@@ -1,9 +1,10 @@
 #pragma once
-#include "Suit.h"
+#include "Suits.h"
 
 class Card{
 public:
-    Card(int value, Suit suit);
-    int *m_value;
-    Suit *m_suit;
+    Card(int value, Suits::Suit suit);
+    std::string ToString();
+    int m_value;
+    Suits::Suit m_suit;
 };

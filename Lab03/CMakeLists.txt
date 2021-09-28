@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.6)
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-add_library (applibrary Card.cpp Game.cpp CardPile.cpp Player.cpp)
+add_library (applibrary Card.cpp Game.cpp CardPile.cpp Player.cpp Suits.cpp)
  
 # Link runTests with what we want to test and the GTest and pthread library
 add_executable(runTests tests.cpp)

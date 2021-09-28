@@ -6,7 +6,41 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.h
+Suits.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.h
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.h
+Card.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.h
+vector
+-
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.h
+Player.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.h
+CardPile.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.h
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.h
+CardPile.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.h
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.h
+string
+-
+
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/main.cpp
+Card.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.h
+CardPile.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.h
+Game.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.h
+Player.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.h
+Suits.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.h
 iostream
 -
 string

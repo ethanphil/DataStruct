@@ -1,4 +1,5 @@
 #include "CardPile.h"
+#include "Suits.h"
 #include <algorithm>
 #include <iostream>
 
@@ -43,4 +44,13 @@ Card *CardPile::GetCardAt(int i)
 int CardPile::GetSize()
 {
     return m_cards.size();
+}
+
+std::string CardPile::ToString()
+{
+    std::string rstr = "";
+    for (int i = 0; i < m_cards.size(); i++)
+    {
+        rstr += "Card " + std::to_string(i) + ": " + std::to_string(m_cards.at(i)->m_value) + "of " + Suits::ToString(m_cards.at(i)->m_suit) + "\n";
+    }
 }

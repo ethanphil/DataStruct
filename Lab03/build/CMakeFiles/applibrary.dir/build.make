@@ -153,12 +153,37 @@ CMakeFiles/applibrary.dir/Player.cpp.o.provides: CMakeFiles/applibrary.dir/Playe
 CMakeFiles/applibrary.dir/Player.cpp.o.provides.build: CMakeFiles/applibrary.dir/Player.cpp.o
 
 
+CMakeFiles/applibrary.dir/Suits.cpp.o: CMakeFiles/applibrary.dir/flags.make
+CMakeFiles/applibrary.dir/Suits.cpp.o: ../Suits.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/applibrary.dir/Suits.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/applibrary.dir/Suits.cpp.o -c "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.cpp"
+
+CMakeFiles/applibrary.dir/Suits.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/applibrary.dir/Suits.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.cpp" > CMakeFiles/applibrary.dir/Suits.cpp.i
+
+CMakeFiles/applibrary.dir/Suits.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/applibrary.dir/Suits.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.cpp" -o CMakeFiles/applibrary.dir/Suits.cpp.s
+
+CMakeFiles/applibrary.dir/Suits.cpp.o.requires:
+
+.PHONY : CMakeFiles/applibrary.dir/Suits.cpp.o.requires
+
+CMakeFiles/applibrary.dir/Suits.cpp.o.provides: CMakeFiles/applibrary.dir/Suits.cpp.o.requires
+	$(MAKE) -f CMakeFiles/applibrary.dir/build.make CMakeFiles/applibrary.dir/Suits.cpp.o.provides.build
+.PHONY : CMakeFiles/applibrary.dir/Suits.cpp.o.provides
+
+CMakeFiles/applibrary.dir/Suits.cpp.o.provides.build: CMakeFiles/applibrary.dir/Suits.cpp.o
+
+
 # Object files for target applibrary
 applibrary_OBJECTS = \
 "CMakeFiles/applibrary.dir/Card.cpp.o" \
 "CMakeFiles/applibrary.dir/Game.cpp.o" \
 "CMakeFiles/applibrary.dir/CardPile.cpp.o" \
-"CMakeFiles/applibrary.dir/Player.cpp.o"
+"CMakeFiles/applibrary.dir/Player.cpp.o" \
+"CMakeFiles/applibrary.dir/Suits.cpp.o"
 
 # External object files for target applibrary
 applibrary_EXTERNAL_OBJECTS =
@@ -167,9 +192,10 @@ libapplibrary.a: CMakeFiles/applibrary.dir/Card.cpp.o
 libapplibrary.a: CMakeFiles/applibrary.dir/Game.cpp.o
 libapplibrary.a: CMakeFiles/applibrary.dir/CardPile.cpp.o
 libapplibrary.a: CMakeFiles/applibrary.dir/Player.cpp.o
+libapplibrary.a: CMakeFiles/applibrary.dir/Suits.cpp.o
 libapplibrary.a: CMakeFiles/applibrary.dir/build.make
 libapplibrary.a: CMakeFiles/applibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libapplibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libapplibrary.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/applibrary.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/applibrary.dir/link.txt --verbose=$(VERBOSE)
 
@@ -182,6 +208,7 @@ CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/Card.cpp.o.require
 CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/Game.cpp.o.requires
 CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/CardPile.cpp.o.requires
 CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/Player.cpp.o.requires
+CMakeFiles/applibrary.dir/requires: CMakeFiles/applibrary.dir/Suits.cpp.o.requires
 
 .PHONY : CMakeFiles/applibrary.dir/requires
 

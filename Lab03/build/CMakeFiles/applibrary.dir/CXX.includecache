@@ -9,14 +9,18 @@
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.cpp
 Card.h
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.h
+iostream
+-
 
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Card.h
-Suit.h
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suit.h
+Suits.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.h
 
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.cpp
 CardPile.h
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.h
+Suits.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.h
 algorithm
 -
 iostream
@@ -31,8 +35,10 @@ vector
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.cpp
 Game.h
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.h
-Suit.h
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suit.h
+Player.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.h
+algorithm
+-
 
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.h
 Player.h
@@ -43,14 +49,18 @@ CardPile.h
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.cpp
 Player.h
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.h
-Game.h
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.h
 
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Player.h
 CardPile.h
 /mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/CardPile.h
+Game.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Game.h
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.cpp
+Suits.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.h
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suits.h
 string
 -
-
-/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab03/Suit.h
 

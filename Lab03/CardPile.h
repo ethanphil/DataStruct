@@ -12,6 +12,7 @@ class CardPile{
     bool RemoveCardAt(int i);
     Card *GetCardAt(int i);
     int GetSize();
+    std::string ToString();
     private:
     std::vector<Card*> m_cards;
 };

@@ -1,16 +1,19 @@
 #pragma once
 #include "CardPile.h"
-#include <string>
+#include "Game.h"
 
 class Player{
-public:
+    public:
+    Player(std::string name);
+    Card* DrawCard(Game *game);
     bool AddCardToHand(Card *c);
     bool AddCardToStack(Card *c);
     Card *RemoveCardFromHandByInt(int i);
     Card *RemoveCardFromHand();
     CardPile *GetHand();
-private:
+    void MoveCardFromHandToStack(int i);
+    private:
     CardPile * m_hand;
     CardPile * m_stack;
-    std::string * m_name;
+    std::string m_name;
 };

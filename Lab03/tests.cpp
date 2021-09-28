@@ -1,12 +1,23 @@
 // tests.cpp
+#pragma 
+#include <fstream>
 #include <gtest/gtest.h>
+#include "Suits.h"
+#include "Card.h"
+#include "CardPile.h"
+#include "Game.h"
+#include "Player.h"
 
-
+		//Suits Class
+	TEST(Card,isSuit)
+	{
 		
- 		TEST(Card,ValueTest)
-		{
+		Card card1(13, Suits::Suit Hearts);
 
-		}
+
+
+
+	}
 
  
 int main(int argc, char **argv) {
