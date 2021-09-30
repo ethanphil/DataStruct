@@ -19,7 +19,6 @@ CMakeFiles/applibrary.dir/Game.cpp.o: ../Suits.h
 
 CMakeFiles/applibrary.dir/Player.cpp.o: ../Card.h
 CMakeFiles/applibrary.dir/Player.cpp.o: ../CardPile.h
-CMakeFiles/applibrary.dir/Player.cpp.o: ../Game.h
 CMakeFiles/applibrary.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/applibrary.dir/Player.cpp.o: ../Player.h
 CMakeFiles/applibrary.dir/Player.cpp.o: ../Suits.h

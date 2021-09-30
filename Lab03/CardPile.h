@@ -4,6 +4,8 @@
 
 class CardPile{
     public:
+    CardPile();
+    ~CardPile();
     void ShuffleCards();
     bool AddCardToBottom(Card *c);
     bool AddCard(Card *c);

@@ -1,17 +1,23 @@
 #pragma once
 #include "CardPile.h"
-#include "Game.h"
 
 class Player{
     public:
     Player(std::string name);
-    Card* DrawCard(Game *game);
+    ~Player();
     bool AddCardToHand(Card *c);
     bool AddCardToStack(Card *c);
+    bool IsValidMove(int c);
     Card *RemoveCardFromHandByInt(int i);
     Card *RemoveCardFromHand();
     CardPile *GetHand();
-    void MoveCardFromHandToStack(int i);
+    CardPile *GetStack();
+    Card *MoveCardFromHandToStack(int i);
+    std::string GetName();
+    void PrintHand();
+    void PrintStack();
+    void PrintCards();
+    bool CheckWon();
     private:
     CardPile * m_hand;
     CardPile * m_stack;

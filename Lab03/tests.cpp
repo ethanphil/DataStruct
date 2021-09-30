@@ -12,7 +12,7 @@
 	TEST(Card,isSuit)
 	{
 		
-		Card card1(13, Suits::Suit Hearts);
+		Card card1(13, Suits::Suit::Hearts);
 
 
 

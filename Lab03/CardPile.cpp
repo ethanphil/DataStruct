@@ -3,6 +3,20 @@
 #include <algorithm>
 #include <iostream>
 
+CardPile::CardPile()
+{
+    m_cards.clear();
+    
+}
+
+CardPile::~CardPile()
+{
+    for (auto c : m_cards)
+    {
+        delete c;
+    }
+}
+
 void CardPile::ShuffleCards()
 {
     std::random_shuffle(m_cards.begin(), m_cards.end());
@@ -10,7 +24,14 @@ void CardPile::ShuffleCards()
 
 bool CardPile::AddCard(Card *c)
 {
+    Card c2 = c2;
+
+    int size = m_cards.size();
+
+
     m_cards.push_back(c);
+
+
 }
 
 bool CardPile::AddCardToBottom(Card *c)
@@ -51,6 +72,7 @@ std::string CardPile::ToString()
     std::string rstr = "";
     for (int i = 0; i < m_cards.size(); i++)
     {
-        rstr += "Card " + std::to_string(i) + ": " + std::to_string(m_cards.at(i)->m_value) + "of " + Suits::ToString(m_cards.at(i)->m_suit) + "\n";
+        rstr += "Card " + std::to_string(i+1) + ": " + std::to_string(m_cards.at(i)->m_value) + " of " + Suits::ToString(m_cards.at(i)->m_suit) + "\n";
     }
+    return rstr;
 }
