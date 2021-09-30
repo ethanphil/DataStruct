@@ -24,14 +24,8 @@ void CardPile::ShuffleCards()
 
 bool CardPile::AddCard(Card *c)
 {
-    Card c2 = c2;
-
-    int size = m_cards.size();
-
-
     m_cards.push_back(c);
-
-
+    return true;
 }
 
 bool CardPile::AddCardToBottom(Card *c)
@@ -52,9 +46,11 @@ Card *CardPile::GetTop()
     return m_cards.back();
 }
 
-bool CardPile::RemoveCardAt(int i)
+Card *CardPile::RemoveCardAt(int i)
 {
+    auto card = m_cards.at(i);
     m_cards.erase(m_cards.begin()+i);
+    return card;
 }
 
 Card *CardPile::GetCardAt(int i)

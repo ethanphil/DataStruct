@@ -27,7 +27,7 @@ bool Player::AddCardToStack(Card *c)
 
 Card *Player::RemoveCardFromHandByInt(int i)
 {
-    m_hand->RemoveCardAt(i);
+    return m_hand->RemoveCardAt(i);
 }
 
 CardPile *Player::GetHand()

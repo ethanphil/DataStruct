@@ -132,7 +132,7 @@ void Game::StartTurn(Player *player)
         getline(cin, empty);
         empty = "";
         tempInput--;
-        if (tempInput > -1 && tempInput < 13 && player->IsValidMove(tempInput))
+        if (tempInput > -1 && tempInput < 6 && player->IsValidMove(tempInput))
         {
             auto tempCard = player->MoveCardFromHandToStack(tempInput);
             cout << "Moved " + tempCard->ToString() + " to stack" << endl;
@@ -152,7 +152,7 @@ void Game::StartTurn(Player *player)
             exitFlag = true;
             turnEnded = true;
         }
-        else if (tempInput+1 > player->GetHand()->GetSize())
+        else
         {
             cout << "Invalid move, try again.." << endl;
         }
@@ -161,11 +161,11 @@ void Game::StartTurn(Player *player)
     if (player->GetHand()->GetSize() > 5)
     {
         exitFlag = false;
-        while (!exitFlag){
+        while (!exitFlag && !m_isGameEnded){
             cout << "You must discard a card, enter the index(starting from 1) of the card you want to get rid of: ";
             cin >> tempInput;
             getline(cin, empty);
-            if (tempInput > 0 && tempInput < 6)
+            if (tempInput > 0 && tempInput < 7)
             {
                 PlayerDiscard(player, tempInput-1);
                 exitFlag = true;

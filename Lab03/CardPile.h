@@ -11,7 +11,7 @@ class CardPile{
     bool AddCard(Card *c);
     Card *UnQueue();
     Card *GetTop();
-    bool RemoveCardAt(int i);
+    Card *RemoveCardAt(int i);
     Card *GetCardAt(int i);
     int GetSize();
     std::string ToString();
