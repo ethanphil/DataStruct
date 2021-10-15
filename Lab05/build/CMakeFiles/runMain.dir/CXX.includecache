@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab05/WhatToSort.h
+iostream
+-
+string
+-
+cmath
+-
+iomanip
+-
+sstream
+-
+
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab05/main.cpp
+WhatToSort.h
+/mnt/c/Users/ethan/OneDrive/Documents/School Fall 2021/DataStruct/Lab05/WhatToSort.h
+iostream
+-
+

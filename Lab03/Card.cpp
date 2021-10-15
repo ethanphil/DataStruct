@@ -14,5 +14,5 @@ Card::~Card()
 
 std::string Card::ToString()
 {
-    std::cout << std::to_string(m_value) + " of " + Suits::ToString(m_suit);
+    return std::to_string(m_value) + " of " + Suits::ToString(m_suit);
 }
